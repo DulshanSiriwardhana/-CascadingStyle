@@ -1,3 +1,4 @@
+import SignUp from '../components/signup';
 import UI from '../images/ui.png';
 
 const HomePage=()=>{
@@ -18,28 +19,10 @@ const HomePage=()=>{
                 </div>
             </div>
             <div className="bg-green-200 h-full flex flex-col justify-center items-center md:flex-row gap-2">
-                <img className='max-w-[700px] p-10' src={UI}/>
+                <img alt='img' className='max-w-[700px] p-10' src={UI}/>
                 <div className='h-full pt-10 pb-10 flex flex-col justify-center items-center gap-8'>
                     <h className=" md:text-3xl">Sign up for free to join the main contest</h>
-                    <div className='p-10 shadow-2xl h-[500px] bg-yellow-500 rounded-xl flex justify-center items-center'>
-                        <div className='w-72 h-[400px] flex flex-col justify-center items-center gap-10'>
-                            <div className='bg-red-500 rounded-lg flex justify-between w-full p-2'>
-                                <h1>User Name</h1>
-                                <input className='rounded-full'></input>
-                            </div>
-                            <div className='bg-green-500 rounded-lg flex justify-between w-full p-2'>
-                                <h1>Email</h1>
-                                <input className='rounded-full'></input>
-                            </div>
-                            <div className='bg-blue-500 rounded-lg flex justify-between w-full p-2'>
-                                <h1>Password</h1>
-                                <input className='rounded-full'></input>
-                            </div>
-                            <div>
-                                <button className='bg-white p-2 rounded-2xl hover:bg-purple-400 focus:bg-red-500'>Submit</button>
-                            </div>
-                        </div>
-                    </div>
+                    <SignUp/>
                 </div>
             </div>
         </div>

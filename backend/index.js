@@ -18,7 +18,10 @@ mongoose.connect(process.env.MONGO_URI, {
 const AdminRouter = require('./routes/Admin');
 app.use('/Admin', AdminRouter);
 
-const PORT = process.env.PORT || 4000;
+const UserRouter = require('./routes/User');
+app.use('/User', UserRouter);
+
+const PORT = process.env.PORT || 4000;-
 
 app.listen(PORT, () => {
     console.log(`Server is up and running on the port ${PORT}`);
