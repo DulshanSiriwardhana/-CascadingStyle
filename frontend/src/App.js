@@ -4,6 +4,7 @@ import HomePage from './pages/HomePage';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import PlayGround from './pages/PlayGround';
 import LeaderBoard from './pages/LearderBoard';
+import Challenges from './pages/Challenges';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Route path='/' element={<HomePage/>}/>
           <Route path='/playground' element={<PlayGround/>}/>
           <Route path='/leaderboard' element={<LeaderBoard/>}/>
+          <Route path='/challenges' element={<Challenges/>}/>
         </Routes>
       </Router>
     </div>
